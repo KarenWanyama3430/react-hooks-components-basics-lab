@@ -1,32 +1,20 @@
 import React from "react";
-
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
-  );
-}
-
-function Home() {
-  return (
-    <div id="home">
-      <h1>Home</h1>
-    </div>
-  );
-}
-
-{/* write an <About> component here */}
-
+// import { format } from "date-fns";
+import ExampleComponent from "./ExampleComponent";
+import TestComponent from "./TestComponent";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+    <div className="App">
+      <h1>Now</h1>
+      <p className="App-intro">
+        In React apps, we write JSX - it looks like HTML, and uses a lot of HTML
+        syntax. JSX lets us include JavaScript functions right along with the
+        HTML, and also allows us to add in components, which are separate,
+        self-contained chunks of JSX.
+      </p>
+      <ExampleComponent />
+      <TestComponent />
     </div>
   );
 }
-
-export default App;
